@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-  ],
+  base: './', // ✅ This fixes blank page issue after build
+  plugins: [tailwindcss()],
 })
