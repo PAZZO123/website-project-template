@@ -9,14 +9,14 @@ const loadComponents = (id, url, callback) =>  {
 };
 
 window.onload = () => {
-  loadComponents('header', '/sections/header.html', () => {
+  loadComponents('header', 'src/sections/header.html', () => {
     import('/src/sections/scripts/header.js');
   });
-  loadComponents('hero', '/sections/hero.html');
-  loadComponents('reference','/sections/reference.html');
-  loadComponents('about', '/sections/about.html');
-  loadComponents('contact', '/sections/contact.html');
-  loadComponents('footer', '/sections/footer.html');
+  loadComponents('hero', 'src/sections/hero.html');
+  loadComponents('reference','src/sections/reference.html');
+  loadComponents('about', 'src/sections/about.html');
+  loadComponents('contact', 'src/sections/contact.html');
+  loadComponents('footer', 'src/sections/footer.html');
 };
 
 console.log('loaded header.js');
