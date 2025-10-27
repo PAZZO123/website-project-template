@@ -1,0 +1,39 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Website project template</title>
+</head>
+<script>
+    const loadComponents = (id, url) =>  {
+        fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+            document.getElementById(id).innerHTML = html;
+        });
+    }
+
+    window.onload = () => {
+        loadComponents('contact', 'src/sections/contact-section.html');
+        // loadComponents('header', '/sections/header.html');
+        // loadComponents('hero', '/sections/hero.html');
+        // loadComponents('reference','/sections/reference.html')
+        //   loadComponents('about', '/sections/about.html');
+        // loadComponents('services', '/sections/services.html');
+        // loadComponents('footer', '/sections/footer.html');
+        // loadComponents('screen2-header', '/sections/screen2/Header.html');
+        // loadComponents('screen2-header', '/sections/screen2/Header.html');
+    }
+</script>
+<body class="relative">
+  <!-- Pages -->
+    <div class="sticky top-0 z-50" id="header"></div>
+    <div class="text-[#00672E]" id="contact"></div>
+    
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
