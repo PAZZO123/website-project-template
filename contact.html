@@ -1,0 +1,29 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Website project template</title>
+</head>
+<script>
+    const loadComponents = (id, url) =>  {
+        fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+            document.getElementById(id).innerHTML = html;
+        });
+    }
+
+    window.onload = () => {
+        loadComponents('header', '../src/sections/Header.html');
+    }
+</script>
+<body>
+  
+    <div class="sticky top-0 z-50 text-[#00672E]" id="header"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
