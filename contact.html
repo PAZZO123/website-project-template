@@ -19,11 +19,14 @@
 
     window.onload = () => {
          loadComponents('footer', 'src/sections/footer.html');
+         loadComponents('header', '../src/sections/Header.html');
         
     }
 </script>
 <body>
-     <div class=" text-[#00672E] lg:mt-20 mt-24 " id="footer"></div>
+  
+    <div class="sticky top-0 z-50 text-[#00672E]" id="header"></div>
+    <div class=" text-[#00672E] lg:mt-20 mt-24 " id="footer"></div>
     <script type="module" src="/src/main.js"></script>
 </body>
 </html>
