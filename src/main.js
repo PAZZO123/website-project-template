@@ -1,7 +1,7 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+// import javascriptLogo from './javascript.svg'
+// import viteLogo from '/vite.svg'
+// import { setupCounter } from './counter.js'
 import '../src/sections/scripts/header.js';
 
 document.querySelector('#app').innerHTML = `
@@ -23,7 +23,3 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
-
-
-
-
