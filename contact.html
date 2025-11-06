@@ -14,9 +14,22 @@
         .then((response) => response.text())
         .then((html) => {
             document.getElementById(id).innerHTML = html;
+            footer_mobile();
         });
     }
-
+    const footer_mobile=()=>{
+        let ft_img=document.getElementById('footer2');
+        let ft_div=document.getElementById('footer_head'); //"
+        let footer_part_one=document.getElementById('footer_part_one');
+        ft_img.classList.toggle('hidden');
+        ft_img.classList.toggle('md:block');
+        ft_div.classList.toggle('mt-50');
+         ft_div.classList.toggle('-mt-15');
+        ft_div.classList.toggle('md:mt-50');
+        footer_part_one.classList.toggle('mb-15')
+         footer_part_one.classList.toggle('md:mb-0')
+       
+    }
     window.onload = () => {
          loadComponents('footer', 'src/sections/footer.html');
          loadComponents('header', '../src/sections/Header.html');
