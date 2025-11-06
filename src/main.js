@@ -1,3 +1,2 @@
 import './style.css'
-import '../src/sections/scripts/header.js';
-
+import './sections/scripts/header.js'

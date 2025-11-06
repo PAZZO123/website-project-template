@@ -3,15 +3,21 @@ import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
+const isBuild = process.env.NODE_ENV === 'production'
+
 export default defineConfig({
   base: './',
   plugins: [
     tailwindcss(),
-    viteStaticCopy({
-      targets: [
-        { src: 'src/**/*', dest: 'src' }, // Copies src folder into dist/src
-      ],
-    }),
+    ...(isBuild
+      ? [
+          viteStaticCopy({
+            targets: [
+              { src: 'src/**/*', dest: 'src' },
+            ],
+          }),
+        ]
+      : []),
   ],
 
   build: {
