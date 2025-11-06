@@ -1,7 +1,7 @@
-<div>
+
     <!-- Footer Image -->
-   <div class=" flex items-center justify-center mt-50 xl:mt-22.5 z-10 relative ">
-    <img class=" md:hidden w-80 h-49"  src="/Images/footer-mobile.png" alt="">
+   <div id="footer_head" class=" flex items-center justify-center mt-50 xl:mt-22.5 z-10 relative ">
+    <img id='footer2' class=" md:hidden w-80 h-49"  src="/Images/footer-mobile.png" alt="" >
      <img class=" hidden md:inline w-[469px] h-62 xl:hidden"  src="/Images/footer-tablet.png" alt="">
      <img class=" hidden xl:inline w-[722px] h-[418px]"  src="/Images/footer-desktop.png" alt="">
    </div>
@@ -36,6 +36,15 @@
     <div class="lg:order-2"><a href="#">Instagram</a></div>
    </div>
    </div>
+   <script>
+    // Select a specific parent
+const parent = document.getElementById('footer'); // selects first .parent
+const child = document.getElementById('footer2');     // finds child inside this parent
+const parent2=document.getElementById('screen2-footer')
+
+if(parent2 || parent){
+    alert('It worked')
+}
+
+   </script>
    
-   
-</div>
