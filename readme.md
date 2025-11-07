@@ -17,13 +17,13 @@ This project was developed collaboratively in a team environment, ensuring code 
 - Clean and professional UI
 - Multi-page navigation (Landing, Contact, Privacy)
 - Team-based development workflow
----
+
 ## Tech Stack
 
 - *Frontend:* HTML, CSS, JavaScript (or framework if used, e.g., React/Next.js)
 - *Version Control:* Git, GitHub
 - *Package Manager:* npm
----
+  
 ## Getting Started
 
 Follow these steps to get the project running locally:
