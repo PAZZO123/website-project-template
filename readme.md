@@ -10,7 +10,7 @@ Baumeister is a responsive website that includes:
 - *Privacy Page:* Details user privacy policies and terms.
 
 This project was developed collaboratively in a team environment, ensuring code quality and consistency through pull requests, code reviews, and branch management.
----
+
 ## Features
 
 - Responsive design for desktop and mobile
