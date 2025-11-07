@@ -1,6 +1,5 @@
 # Baumeister
 > A website including Landing, Contact, and Privacy pages, developed collaboratively using Git workflows.
----
 ## Introduction
 
 Baumeister is a responsive website that includes:
