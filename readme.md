@@ -23,15 +23,12 @@ This project was developed collaboratively in a team environment, ensuring code 
 - *Frontend:* HTML, CSS, JavaScript (or framework if used, e.g., React/Next.js)
 - *Version Control:* Git, GitHub
 - *Package Manager:* npm
-
 ---
----
-
 ## Getting Started
 
 Follow these steps to get the project running locally:
 
-1. *Clone the repository:*
+### 1. *Clone the repository:*
 
 bash
 git clone https://github.com/PAZZO123/website-project-template
@@ -39,9 +36,9 @@ cd website-project-template
 npm install
 npm run dev
 
-2. *Open your browser and navigate to:*
+### 2. *Open your browser and navigate to:*
 
 http://localhost:3000
  
-3. *Use deployed URL for production version.*
+### 3. *Use deployed URL for production version.*
 [Baumeister Live Version](https://imaginative-pothos-e524c3.netlify.app/)
