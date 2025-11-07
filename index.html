@@ -17,7 +17,7 @@
     }
 
     window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
+        loadComponents('header', '../src/sections/header.html');
         loadComponents('hero', 'src/sections/hero.html');
         loadComponents('reference','src/sections/reference.html')
           loadComponents('about', 'src/sections/about.html');
@@ -26,10 +26,10 @@
         loadComponents('screen2-header', 'src/sections/screen2/Header.html');
     }
 </script>
-<body class="relative">
+<body class="relative font-outfit bg-[#EFECEA]">
   <!-- Pages -->
-    <div class="sticky top-0 z-50" id="header"></div>
-    <div id="hero"></div>
+    <div class="sticky top-0 left-0 z-1000  " id="header"></div>
+    <div class="z-0 mt-60" id="hero"></div>
      <div id="about"></div>
     <div id="services"></div>
     <div class="font-outfit" id="reference"></div>
