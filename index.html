@@ -5,7 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Website project template</title>
 </head>
 <script>
@@ -18,21 +17,22 @@
     }
 
     window.onload = () => {
-        loadComponents('header', '/sections/header.html');
-        loadComponents('hero', '/sections/hero.html');
-        loadComponents('reference','/sections/reference.html')
-          loadComponents('about', '/sections/about.html');
-        loadComponents('services', '/sections/services.html');
-        loadComponents('footer', '/sections/footer.html');
+        loadComponents('header', '../src/sections/header.html');
+        loadComponents('hero', 'src/sections/hero.html');
+        loadComponents('reference','src/sections/reference.html')
+          loadComponents('about', 'src/sections/about.html');
+        loadComponents('services', 'src/sections/services.html');
+        loadComponents('footer', 'src/sections/footer.html');
+        loadComponents('screen2-header', 'src/sections/screen2/Header.html');
     }
 </script>
-<body>
-  
-    <div class="sticky top-0 z-50" id="header"></div>
-    <div id="hero"></div>
+<body class="relative font-outfit bg-[#EFECEA]">
+  <!-- Pages -->
+    <div class="sticky top-0 left-0 z-1000  " id="header"></div>
+    <div class="z-0 -mt-30" id="hero"></div>
      <div id="about"></div>
     <div id="services"></div>
-    <div id="reference"></div>
+    <div class="font-outfit" id="reference"></div>
     <div id="footer"></div>
     <script type="module" src="/src/main.js"></script>
 </body>

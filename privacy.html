@@ -1,0 +1,48 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Website project template</title>
+</head>
+<script>
+    const loadComponents = (id, url) =>  {
+        fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+            document.getElementById(id).innerHTML = html;
+            if(id=="screen2-footer")
+            {
+                footer_mobile();
+            }
+        });
+    }
+    const footer_mobile=()=>{
+        let ft_img=document.getElementById('footer2');
+        let ft_div=document.getElementById('footer_head'); //"
+        let footer_part_one=document.getElementById('footer_part_one');
+        ft_img.classList.toggle('hidden');
+        ft_img.classList.toggle('md:block');
+        ft_div.classList.toggle('mt-50');
+         ft_div.classList.toggle('-mt-15');
+        ft_div.classList.toggle('md:mt-50');
+        footer_part_one.classList.toggle('mb-15')
+         footer_part_one.classList.toggle('md:mb-0')
+       
+    }
+    window.onload = () => {
+        loadComponents('screen2-footer', 'src/sections/footer.html');
+        loadComponents('section1','src/sections/section1.html')
+        loadComponents('header', '../src/sections/Header.html');
+    }
+</script>
+<body class="bg-[#EFECEA] font-outfit">
+    <div class="sticky top-0 left-0 z-200 text-[#00672E]" id="header"></div>
+    <div id="section1"></div>
+    <div class=" text-[#00672E] lg:mt-20 mt-24 " id="screen2-footer"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
